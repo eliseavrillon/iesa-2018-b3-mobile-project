@@ -2,10 +2,14 @@
 
 Team Bento
 
-Esther Vilpique
-Elodie Chonion
-Monica Meride
-Ludovic Florentiny
-Elise Avrillon
+Membres de l'équipe :
+<ul>
+  <li> Esther Vilpique</li>
+  <li>Elodie Chonion</li>
+  <li>Monica Meride</li>
+  <li>Ludovic Florentiny</li>
+  <li>Elise Avrillon</li>
+ </ul>
 
 Pitch de l'app : 
+ARES est une association pour la réinsertion de personnes dans le milieu professionel. Ils font travailler ces pp
