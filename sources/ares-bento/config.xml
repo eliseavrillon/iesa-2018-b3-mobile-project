@@ -81,24 +81,11 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="1.1.19" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="2.0.5" />
-<<<<<<< HEAD
-<<<<<<< HEAD
     <engine name="ios" spec="~4.5.4" />
-=======
-<<<<<<< HEAD
-    <engine name="ios" spec="~4.5.4" />
-=======
-=======
->>>>>>> c91b13c0f0d873f2780b7c1f2e954dbc7e6f1238
     <plugin name="cordova-plugin-camera" spec="^4.0.3" />
     <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
     </feature>
     <engine name="ios" spec="4.5.4" />
     <engine name="android" spec="7.0.0" />
-<<<<<<< HEAD
->>>>>>> fe26015b4878078e3c8241604d5442948079a50b
->>>>>>> 04ad7903c0e85f1914ec4f0d0533005836f1684e
-=======
->>>>>>> c91b13c0f0d873f2780b7c1f2e954dbc7e6f1238
 </widget>
