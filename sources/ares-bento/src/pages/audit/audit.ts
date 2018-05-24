@@ -32,7 +32,7 @@ export class AuditPage {
       mediaType: this.camera.MediaType.PICTURE,
       saveToPhotoAlbum: true
     }
-    
+
     this.camera.getPicture(options).then((imageData) => {
      // imageData is either a base64 encoded string or a file URI
      // If it's base64:
