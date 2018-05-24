@@ -84,6 +84,9 @@
 <<<<<<< HEAD
     <engine name="ios" spec="~4.5.4" />
 =======
+<<<<<<< HEAD
+    <engine name="ios" spec="~4.5.4" />
+=======
     <plugin name="cordova-plugin-camera" spec="^4.0.3" />
     <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
@@ -91,4 +94,5 @@
     <engine name="ios" spec="4.5.4" />
     <engine name="android" spec="7.0.0" />
 >>>>>>> fe26015b4878078e3c8241604d5442948079a50b
+>>>>>>> 04ad7903c0e85f1914ec4f0d0533005836f1684e
 </widget>
