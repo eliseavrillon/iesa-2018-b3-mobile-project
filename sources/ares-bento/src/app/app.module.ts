@@ -11,6 +11,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Camera } from '@ionic-native/camera';
+import { Media } from '@ionic-native/media';
+import { File } from '@ionic-native/file';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { Camera } from '@ionic-native/camera';
     StatusBar,
     SplashScreen,
     Camera,
+    Media,
+    File,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
