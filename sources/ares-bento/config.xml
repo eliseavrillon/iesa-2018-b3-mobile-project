@@ -85,6 +85,10 @@
     <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
     </feature>
+    <engine name="android" spec="7.0.0" />
+    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
+    <engine name="ios" spec="~4.5.4" />
+    <allow-navigation href="http://10.36.143.187:8100" />
     <feature name="Calendar">
         <param name="ios-package" value="Calendar" />
     </feature>
