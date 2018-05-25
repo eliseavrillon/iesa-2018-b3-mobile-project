@@ -62,17 +62,14 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
-<<<<<<< HEAD
       "cordova-plugin-media": {
         "KEEP_AVAUDIOSESSION_ALWAYS_ACTIVE": "NO"
       },
       "cordova-plugin-filepath": {},
-      "cordova-plugin-file": {}
-=======
+      "cordova-plugin-file": {},
       "cordova-plugin-calendar": {
         "CALENDAR_USAGE_DESCRIPTION": " "
       }
->>>>>>> 533c3061c008b92bd08c465567886f25c1884682
     },
     "platforms": [
       "ios",
