@@ -19,4 +19,7 @@
 <ion-content padding>
   <button ion-button (click)="takePicture()">Prendre une photo</button>
   <p align="center"><img src="{{ myPhoto }}"></p>
+  <button ion-button (click)="ionViewDidLoad()">Géolocalisation</button>
+  <p>Lattitude: {{ lat }}</p>
+  <p>Longitude: {{ lng }}</p>
 </ion-content>

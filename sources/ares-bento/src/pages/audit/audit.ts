@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { Geolocation } from '@ionic-native/geolocation';
+
 
 /**
  * Generated class for the AuditPage page.
@@ -17,13 +19,20 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 export class AuditPage {
 
   myPhoto:any;
+  lat: any;
+  lng: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private camera: Camera) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private camera: Camera, public geo: Geolocation) {
+  }
+  
+  ionViewDidLoad(){
+    this.geo.getCurrentPosition().then( pos => {
+      this.lat = pos.coords.latitude;
+      this.lng = pos.coords.longitude;
+    }).catch( err => console.log(err));
   }
 
-  /*ionViewDidLoad() {
-    console.log('ionViewDidLoad AuditPage');
-  }*/
+
   takePicture(){
     const options: CameraOptions = {
       quality: 100,
