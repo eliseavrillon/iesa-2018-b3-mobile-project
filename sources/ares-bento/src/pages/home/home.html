@@ -1,6 +1,14 @@
     
 
 <ion-content text-center class="background">
+    <button ion-button menuToggle>
+        <ion-header>
+        <ion-navbar>
+        <ion-icon name="menu"></ion-icon>
+        <ion-title>ARES Bento</ion-title>
+        </ion-navbar>
+        </ion-header>
+      </button> 
 <button ion-button menuToggle>
       <ion-header>
       <ion-navbar>
@@ -10,7 +18,7 @@
       </ion-header>
     </button> 
   <div>
-    <div class="head" tex-center>
+    <div class="head" text-center>
       <ion-img width="112" height="150" src="../assets/imgs/logo_ares.png" alt="logo Ares" class="logo_principale" ></ion-img>
 		</div>
 
@@ -28,6 +36,8 @@
 				<button ion-button block class="button_accueil" type="submit" [disabled]="!registerForm.form.valid"><b>Se connecte</b></button>
         <!--<button ion-button class="button_accueil" block clear (click)="createAccount()">Créer un nouveau compte</button>-->
       </form>
+				<button ion-button block class="button_accueil"><b>Se connecte</b></button>
+        
 		</div>
 
   </div>

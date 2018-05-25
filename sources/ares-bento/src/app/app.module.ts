@@ -6,12 +6,19 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AuditPage } from '../pages/audit/audit';
 import { ListPage } from '../pages/list/list';
+
 import { RegisterPage } from '../pages/register/register';
+
+import { LancerauditPage } from '../pages/lanceraudit/lanceraudit';
+import { Calendar } from '@ionic-native/calendar';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Camera } from '@ionic-native/camera';
+import { Media } from '@ionic-native/media';
+import { File } from '@ionic-native/file';
 
 import { AuthService } from '../providers/auth-service/auth-service';
 
@@ -21,7 +28,8 @@ import { AuthService } from '../providers/auth-service/auth-service';
     HomePage,
     AuditPage,
     ListPage,
-    RegisterPage
+    RegisterPage,
+    LancerauditPage
   ],
   imports: [
     BrowserModule,
@@ -33,13 +41,17 @@ import { AuthService } from '../providers/auth-service/auth-service';
     HomePage,
     AuditPage,
     ListPage,
-    RegisterPage
+    RegisterPage,
+    LancerauditPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Camera,
     AuthService,
+    Media,
+    File,
+    Calendar
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
