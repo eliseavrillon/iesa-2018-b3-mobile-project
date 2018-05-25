@@ -6,6 +6,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AuditPage } from '../pages/audit/audit';
 import { ListPage } from '../pages/list/list';
+import { LancerauditPage } from '../pages/lanceraudit/lanceraudit';
+import { Calendar } from '@ionic-native/calendar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +21,8 @@ import { File } from '@ionic-native/file';
     MyApp,
     HomePage,
     AuditPage,
-    ListPage
+    ListPage,
+    LancerauditPage,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { File } from '@ionic-native/file';
     MyApp,
     HomePage,
     AuditPage,
-    ListPage
+    ListPage,
+    LancerauditPage,
   ],
   providers: [
     StatusBar,
@@ -38,6 +42,7 @@ import { File } from '@ionic-native/file';
     Camera,
     Media,
     File,
+    Calendar,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
