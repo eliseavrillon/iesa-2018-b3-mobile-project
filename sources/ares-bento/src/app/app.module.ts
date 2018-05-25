@@ -7,12 +7,15 @@ import { HomePage } from '../pages/home/home';
 import { AuditPage } from '../pages/audit/audit';
 import { ListPage } from '../pages/list/list';
 import { LancerauditPage } from '../pages/lanceraudit/lanceraudit';
+import { Calendar } from '@ionic-native/calendar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Camera } from '@ionic-native/camera';
 import { Geolocation } from '@ionic-native/geolocation';
+import { Media } from '@ionic-native/media';
+import { File } from '@ionic-native/file';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,9 @@ import { Geolocation } from '@ionic-native/geolocation';
     SplashScreen,
     Camera,
     Geolocation,
+    Media,
+    File,
+    Calendar,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
