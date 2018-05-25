@@ -3,7 +3,7 @@
     <name>ares-bento</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://10.36.184.172:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -18,6 +18,7 @@
     <preference name="FadeSplashScreenDuration" value="300" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
+    <preference name="android-build-tool" value="gradle" />
     <preference name="SplashScreenDelay" value="3000" />
     <platform name="android">
         <allow-intent href="market:*" />
@@ -84,7 +85,14 @@
     <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
     </feature>
+    <feature name="Calendar">
+        <param name="ios-package" value="Calendar" />
+    </feature>
+    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
+    <plugin name="cordova-plugin-calendar" spec="^5.1.0">
+        <variable name="CALENDAR_USAGE_DESCRIPTION" value=" " />
+    </plugin>
+    <allow-navigation href="http://10.36.184.172:8100" />
     <engine name="ios" spec="4.5.4" />
     <engine name="android" spec="7.0.0" />
-    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
 </widget>

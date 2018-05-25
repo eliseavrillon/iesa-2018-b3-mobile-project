@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { AuditPage } from '../pages/audit/audit';
 import { ListPage } from '../pages/list/list';
 import { LancerauditPage } from '../pages/lanceraudit/lanceraudit';
+import { Calendar } from '@ionic-native/calendar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -37,7 +38,8 @@ import { Camera } from '@ionic-native/camera';
     StatusBar,
     SplashScreen,
     Camera,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Calendar
   ]
 })
 export class AppModule {}
