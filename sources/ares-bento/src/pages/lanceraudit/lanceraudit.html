@@ -1,0 +1,72 @@
+<!--
+  Generated template for the LancerauditPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lancer un audit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list>
+		<ion-item>
+  			<ion-label>Secteur</ion-label>
+  			<ion-select [(ngModel)]="secteur">
+    			<ion-option value="a">Batiment A</ion-option>
+    			<ion-option value="b">Batiment B</ion-option>
+    			<ion-option value="c">Batiment C</ion-option>
+    			<ion-option value="d">Batiment D</ion-option>
+    			<ion-option value="e">Batiment E</ion-option>
+  			</ion-select>
+		</ion-item>
+  		<ion-item>
+  			<ion-label>Employé</ion-label>
+  			<ion-select [(ngModel)]="employe">
+    			<ion-option value="1">Employé 1</ion-option>
+    			<ion-option value="2">Employé 2</ion-option>
+    			<ion-option value="3">Employé 3</ion-option>
+    			<ion-option value="4">Employé 4</ion-option>
+    			<ion-option value="5">Employé 5</ion-option>
+  			</ion-select>
+		</ion-item>
+	</ion-list>
+	
+	<ion-list class="liste-tache-lanceraudit">
+	<ion-label>Tâches</ion-label>
+  <ion-item>
+    <ion-thumbnail item-start>
+      <ion-img src="../assets/imgs/toilette-tache.jpg"></ion-img>
+    </ion-thumbnail>
+    <h2>Tâche #5233</h2>
+    <p>Sale propre</p>
+    <button ion-button clear item-end><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail item-start>
+      <img src="../assets/imgs/toilette-tache.jpg">
+    </ion-thumbnail>
+    <h2>Tâche #5233</h2>
+    <p>Sale propre</p>
+    <button ion-button clear item-end><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+      <img src="../assets/imgs/toilette-tache.jpg">
+    </ion-thumbnail>
+    <h2>Tâche #5233</h2>
+    <p>Sale propre</p>
+    <button ion-button clear item-end><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>
+  </ion-item>
+</ion-list>
+
+</ion-content>

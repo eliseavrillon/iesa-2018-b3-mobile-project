@@ -1,0 +1,63 @@
+page-lanceraudit {
+	
+
+ion-item {
+  background: transparent !important;
+  background: #fff;
+  text-align: left !important;
+  color: #fff !important;
+  margin-bottom: 20px !important;
+
+    ion-label {
+      font-size: 12px !important;
+      color: #a2a2a2 !important;
+    }
+    ion-input {
+      background: none;
+      color: #000 !important;
+      border-radius: 0px;
+      box-shadow: none !important;
+    }
+}
+
+.list-ios > .item-block:first-child {
+  border-top: none !important; 
+}
+
+.item-ios{
+	padding-left:0px;
+}
+
+.liste-tache-lanceraudit{
+	
+	
+}
+
+.liste-tache-lanceraudit ion-item{
+	height:120px;
+	border-radius:10px !important;
+	box-shadow: 0px 0px 5px  #dddcdc!important;
+
+}
+
+.liste-tache-lanceraudit .item-block{
+	border-bottom:none !important;
+}
+
+.liste-tache-lanceraudit .item-inner{
+	border-bottom:none !important;
+}
+
+.liste-tache-lanceraudit ion-img{
+	height:120px;
+	width:90px;
+}
+.liste-tache-lanceraudit img{
+	width:90px;
+	height:120px;
+
+}
+
+
+
+}
