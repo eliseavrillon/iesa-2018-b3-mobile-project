@@ -6,18 +6,22 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AuditPage } from '../pages/audit/audit';
 import { ListPage } from '../pages/list/list';
+import { RegisterPage } from '../pages/register/register';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Camera } from '@ionic-native/camera';
 
+import { AuthService } from '../providers/auth-service/auth-service';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     AuditPage,
-    ListPage
+    ListPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
@@ -28,12 +32,14 @@ import { Camera } from '@ionic-native/camera';
     MyApp,
     HomePage,
     AuditPage,
-    ListPage
+    ListPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Camera,
+    AuthService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
