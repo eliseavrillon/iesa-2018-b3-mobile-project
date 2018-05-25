@@ -1,28 +1,30 @@
-<ion-header>
-  <ion-navbar>
     <!-- <button ion-button menuToggle>
+      <ion-header>
+      <ion-navbar>
       <ion-icon name="menu"></ion-icon>
+      <ion-title>ARES Bento</ion-title>
+      </ion-navbar>
+      </ion-header>
     </button> -->
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content class="background">
-	<ion-card>
-		<ion-card-header>
-			Login Form
-		</ion-card-header>
-		<ion-card-content>
-			<ion-list no-line>
+<ion-content text-center class="background">
+  <div>
+    <div class="head" tex-center>
+      <ion-img width="112" height="150" src="../assets/imgs/logo_ares.png" alt="logo Ares" class="logo_principale" ></ion-img>
+		</div>
+
+		<div class="inputs">
 				<ion-item>
-					<ion-input type="text" placeholder="remplir mail" class="mail"></ion-input>
+          <ion-label stacked>Mail</ion-label>
+					<ion-input type="text" placeholder=""></ion-input>
 				</ion-item>
 				<ion-item>
-					<ion-input type="password" placeholder="remplir mot de passe" class="mdp"></ion-input>
+          <ion-label stacked>Mot de passe</ion-label>
+					<ion-input type="password" placeholder=""></ion-input>
 				</ion-item>
-				<a>Mot de passe oublié ?</a>
-				<button ion-button block outline color="light">Se connecter</button>
-			</ion-list>
-		</ion-card-content>
-	</ion-card>
+				<a href="#">Mot de passe oublié ?</a>
+				<button ion-button block class="button_accueil"><b>Se connecte</b></button>
+		</div>
+
+  </div>
 </ion-content>
