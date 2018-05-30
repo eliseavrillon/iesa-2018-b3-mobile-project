@@ -6,11 +6,11 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+  <ion-navbar ng-controller="MyCtrl">
+    <button ion-button color="dark" (click)="openpage('ProfilePage')" class="button-arrow-back">
+      <ion-icon name="arrow-back" class="icon-Lancer-audit" ></ion-icon>
     </button>
-    <ion-title>Lancer un audit</ion-title>
+    <ion-title >Lancer un audit</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -39,12 +39,12 @@
   			</ion-select>
 		</ion-item>
 	</ion-list>
-	
+
 	<ion-list class="liste-tache-lanceraudit">
 	<ion-label>Tâches</ion-label>
   <ion-item>
     <ion-thumbnail item-start>
-      <ion-img src="../assets/imgs/toilette-tache.jpg"></ion-img>
+      <ion-img src="../assets/imgs/wc.jpg"></ion-img>
     </ion-thumbnail>
     <h2>Tâche #5233</h2>
     <p>Sale propre</p>
@@ -52,7 +52,7 @@
   </ion-item>
   <ion-item>
     <ion-thumbnail item-start>
-      <img src="../assets/imgs/toilette-tache.jpg">
+      <ion-img src="../assets/imgs/wc.jpg"></ion-img>
     </ion-thumbnail>
     <h2>Tâche #5233</h2>
     <p>Sale propre</p>
@@ -61,7 +61,7 @@
 
   <ion-item>
     <ion-thumbnail item-start>
-      <img src="../assets/imgs/toilette-tache.jpg">
+      <ion-img src="../assets/imgs/wc.jpg"></ion-img>
     </ion-thumbnail>
     <h2>Tâche #5233</h2>
     <p>Sale propre</p>
@@ -69,9 +69,6 @@
   </ion-item>
 </ion-list>
 
-<button ion-button (click)="launchCalendar()">Choisir la deadline</button>
-
-
-
+<!--<button ion-button (click)="launchCalendar()">Choisir la deadline</button>-->
 
 </ion-content>

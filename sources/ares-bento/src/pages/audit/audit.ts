@@ -34,8 +34,8 @@ export class AuditPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private camera: Camera, private media: Media, private file: File, public platform: Platform, public geo: Geolocation) {
   }
-  
-  
+
+
   ionViewDidLoad(){
     this.geo.getCurrentPosition().then( pos => {
       this.lat = pos.coords.latitude;
@@ -66,14 +66,14 @@ export class AuditPage {
   }
 
   //enregistrement audio
-  /*recordingAudio(){ 
+  /*recordingAudio(){
     this.file.createFile(this.file.tempDirectory, 'my_file.m4a', true).then(() => {
       let file = this.media.create(this.file.tempDirectory.replace(/^file:\/\//, '') + 'my_file.m4a');
       file.startRecord();
       window.setTimeout(() => file.stopRecord(), 10000);
     });
 
-    //this.myFile.startRecord(); //lancement enregistrement 
+    //this.myFile.startRecord(); //lancement enregistrement
 
     //this.myFile.stopRecord(); //arrêt de l'enregistrement
 
@@ -123,5 +123,10 @@ export class AuditPage {
     }
     this.audio.play();
     this.audio.setVolume(0.8);
+  }
+
+  openpage(nompage) {
+    this.navCtrl.setRoot(nompage);
+    console.log('clicked')
   }
 }

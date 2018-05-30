@@ -26,7 +26,7 @@ export class HomePage {
     this.showLoading()
     this.auth.login(this.registerCredentials).subscribe(allowed => {
       if (allowed) {
-        this.nav.setRoot('HomePage');
+        this.nav.setRoot('ProfilePage');
       } else {
         this.showError("Access Denied");
       }
@@ -56,7 +56,7 @@ export class HomePage {
   }
 
   onClick() {
-    this.navCtrl.push(ProfilePage);
+    this.nav.push(ProfilePage);
     console.log('clicked')
   }
 }

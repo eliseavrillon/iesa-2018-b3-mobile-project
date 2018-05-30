@@ -13,7 +13,7 @@ import 'rxjs/add/operator/map';
 export class User {
   name: string;
   email: string;
- 
+
   constructor(name: string, email: string) {
     this.name = name;
     this.email = email;
@@ -23,21 +23,21 @@ export class User {
 @Injectable()
 export class AuthService {
   currentUser: User;
- 
+
   public login(credentials) {
     if (credentials.email === null || credentials.password === null) {
       return Observable.throw("Please insert credentials");
     } else {
       return Observable.create(observer => {
         // At this point make a request to your backend to make a real check!
-        let access = (credentials.password === "pass" && credentials.email === "email");
+        let access = (credentials.password === "ludo" && credentials.email === "ludo.florentiny@gmail.com");
         this.currentUser = new User('ludo', 'ludo.florentiny@gmail.com');
         observer.next(access);
         observer.complete();
       });
     }
   }
- 
+
   public register(credentials) {
     if (credentials.email === null || credentials.password === null) {
       return Observable.throw("Please insert credentials");
@@ -49,11 +49,11 @@ export class AuthService {
       });
     }
   }
- 
+
   public getUserInfo() : User {
     return this.currentUser;
   }
- 
+
   public logout() {
     return Observable.create(observer => {
       this.currentUser = null;

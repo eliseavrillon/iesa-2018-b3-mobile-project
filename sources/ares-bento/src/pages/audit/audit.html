@@ -6,11 +6,11 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+  <ion-navbar ng-controller="MyCtrl">
+    <button ion-button color="dark" (click)="openpage('ProfilePage')" class="button-arrow-back">
+      <ion-icon name="arrow-back" class="icon-Lancer-audit" ></ion-icon>
     </button>
-    <ion-title>Audit</ion-title>
+    <ion-title >Audits</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -41,10 +41,10 @@
       </ion-item>
     </ion-list>
   </div>
-<div>
-    <p>Localisation</p>
-  <button ion-button (click)="ionViewDidLoad()">Géolocalisation</button>
-  <p>Lattitude: {{ lat }}</p>
-  <p>Longitude: {{ lng }}</p>
-</div>
+  <div>
+      <p>Localisation</p>
+    <button ion-button (click)="ionViewDidLoad()">Géolocalisation</button>
+    <p>Lattitude: {{ lat }}</p>
+    <p>Longitude: {{ lng }}</p>
+  </div>
 </ion-content>

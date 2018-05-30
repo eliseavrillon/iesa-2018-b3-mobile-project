@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Calendar } from '@ionic-native/calendar';
+//import { Calendar } from '@ionic-native/calendar';
+import { Platform } from 'ionic-angular';
 
 /**
  * Generated class for the LancerauditPage page.
@@ -17,20 +18,26 @@ import { Calendar } from '@ionic-native/calendar';
 export class LancerauditPage {
 
   constructor(
-  	public navCtrl: NavController, 
+  	public navCtrl: NavController,
   	public navParams: NavParams,
-  	private calendar: Calendar
+    platform: Platform,
+  //	private calendar: Calendar
   	) {
-  }
+    }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LancerauditPage');
   }
 
-launchCalendar() {
+/*launchCalendar() {
 	this.calendar.openCalendar(new Date()).then();
+}*/
+
+openpage(nompage) {
+  this.navCtrl.setRoot(nompage);
+  console.log('clicked')
 }
 
 
 }
-
