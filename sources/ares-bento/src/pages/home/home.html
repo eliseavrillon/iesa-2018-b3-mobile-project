@@ -1,32 +1,42 @@
-    <!-- <button ion-button menuToggle>
+
+
+<ion-content text-center class="background">
+    <button ion-button menuToggle>
+        <ion-header>
+        <ion-navbar>
+        <ion-icon name="menu"></ion-icon>
+        <ion-title>ARES Bento</ion-title>
+        </ion-navbar>
+        </ion-header>
+      </button>
+<button ion-button menuToggle>
       <ion-header>
       <ion-navbar>
       <ion-icon name="menu"></ion-icon>
       <ion-title>ARES Bento</ion-title>
       </ion-navbar>
       </ion-header>
-    </button> -->
-
-<ion-content text-center class="background">
+    </button>
   <div>
-    <div class="head" tex-center>
+    <div class="head" text-center>
       <ion-img width="112" height="150" src="../assets/imgs/logo_ares.png" alt="logo Ares" class="logo_principale" ></ion-img>
 		</div>
 
 		<div class="inputs">
+      <form (ngSubmit)="login()" #registerForm="ngForm">
 				<ion-item>
           <ion-label stacked>Mail</ion-label>
-					<ion-input type="text"></ion-input>
+					<ion-input type="text" name="email" placeholder="" [(ngModel)]="registerCredentials.email" required></ion-input>
 				</ion-item>
 				<ion-item>
           <ion-label stacked>Mot de passe</ion-label>
-					<ion-input type="password"></ion-input>
+					<ion-input type="password" placeholder="" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
 				</ion-item>
 				<a href="#">Mot de passe oublié ?</a>
-				<button ion-button block (click)="onClick()" class="button_accueil"><b>Se connecte</b></button>
+				<button ion-button block class="button_accueil" type="submit" [disabled]="!registerForm.form.valid"><b>Se connecte</b></button>
+        <!--<button ion-button class="button_accueil" block clear (click)="createAccount()">Créer un nouveau compte</button>-->
+      </form>
 		</div>
-
-    <!-- <button ion-button small class="Home"><b>YOLO</b></button> -->
 
   </div>
 </ion-content>
