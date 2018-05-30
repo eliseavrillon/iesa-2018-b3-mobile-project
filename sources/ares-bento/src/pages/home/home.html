@@ -16,15 +16,17 @@
 		<div class="inputs">
 				<ion-item>
           <ion-label stacked>Mail</ion-label>
-					<ion-input type="text" placeholder=""></ion-input>
+					<ion-input type="text"></ion-input>
 				</ion-item>
 				<ion-item>
           <ion-label stacked>Mot de passe</ion-label>
-					<ion-input type="password" placeholder=""></ion-input>
+					<ion-input type="password"></ion-input>
 				</ion-item>
 				<a href="#">Mot de passe oublié ?</a>
-				<button ion-button block class="button_accueil"><b>Se connecte</b></button>
+				<button ion-button block (click)="onClick()" class="button_accueil"><b>Se connecte</b></button>
 		</div>
+
+    <!-- <button ion-button small class="Home"><b>YOLO</b></button> -->
 
   </div>
 </ion-content>

@@ -1,8 +1,10 @@
 .background {
-  background-color: #1f88de;
+  background: linear-gradient(160deg, #faa548 30%, #e34f68 70%);
 }
 
-.head {
+.logo_principale {
+  background: transparent !important;
+  margin-top: 10%;
 }
 
 .inputs {
@@ -29,7 +31,7 @@ ion-item {
       background: #fff;
       color: #000;
       border-radius: 5px;
-      box-shadow: 0px 0px 35px  #000 !important;
+      box-shadow: 12px 12px 30px  #000 !important;
     }
 }
 
@@ -42,4 +44,10 @@ a {
   background-color: #ffb400;
   color: #fff;
   margin-top: 50px;
+}
+
+.Home {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }

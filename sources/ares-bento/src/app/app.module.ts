@@ -6,10 +6,10 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AuditPage } from '../pages/audit/audit';
 import { ListPage } from '../pages/list/list';
+import { ProfilePage } from '../pages/profile/profile';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { Camera } from '@ionic-native/camera';
 
 @NgModule({
@@ -17,7 +17,8 @@ import { Camera } from '@ionic-native/camera';
     MyApp,
     HomePage,
     AuditPage,
-    ListPage
+    ListPage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,8 @@ import { Camera } from '@ionic-native/camera';
     MyApp,
     HomePage,
     AuditPage,
-    ListPage
+    ListPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
