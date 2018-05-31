@@ -10,7 +10,7 @@
     <button ion-button color="dark" (click)="openpage('ProfilePage')" class="button-arrow-back">
       <ion-icon name="arrow-back" class="icon-Lancer-audit" ></ion-icon>
     </button>
-    <ion-title >Audits</ion-title>
+    <ion-title >AUDITS</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -19,7 +19,7 @@
 <ion-content padding>
   <div style="border: 1px black">
     <h3>Tâche :</h3>
-    <button ion-button (click)="takePicture()">Prendre une photo</button>
+    <button ion-button outline (click)="takePicture()" class="TP"><ion-icon name="camera"></ion-icon></button>
     <p align="center" style="background: lightgray; min-height: 150px" padding><img src="{{ myPhoto }}"></p>
   </div>
   <div>
